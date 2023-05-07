@@ -56,8 +56,14 @@ public class Lobby {
 		}
 	}
 	
-	public synchronized boolean CreateRoom(String nameCreator, ) {
-		
+	public synchronized boolean CreateRoom(String makerName,Socket makerSocket,String roomName,String roomPw) {
+		for(Room room : rooms){
+			String existedRN = room.getRoomName();
+			if(roomName.equals(existedRN.get)) {
+				System.out.println(makerName+"'s try to make room failed , there is already room existed");
+				return false;
+			};
+		}
 	}
 	
 	public synchronized boolean EnterRoom(String username, Socket userSocket,Room roomname){
