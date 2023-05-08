@@ -12,6 +12,12 @@ public class Server {
 		return instance;
 	}
 	
-	RegisterUser
+	public synchronized boolean registUser(String userName,String passWord) {
+		
+	}
+	
+	public synchronized boolean logInUser(String userName,String passWord) {
+		
+	}
 	
 }
